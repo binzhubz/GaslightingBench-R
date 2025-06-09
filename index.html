@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Reasoning Models Are More Easily Gaslighted Than You Think</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Reasoning Models Are More Easily Gaslighted Than You Think</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://binzhubz.github.io/" target="_blank">Bin Zhu*</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://orcid.org/my-orcid?orcid=0009-0002-5190-0968" target="_blank">Hailong Yin*</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://fvl.fudan.edu.cn/people/jingjingchen/" target="_blank">Jingjing Chen</a><sup>2</sup></span>
+              <span class="author-block">
+                <a href="https://fvl.fudan.edu.cn/" target="_blank">Yu-Gang Jiang</a><sup>2</sup></span>
+              </div>
+
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">1 Singapore Management University 2 Fudan University  <br></span>
+                <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+              </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <!-- <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span> -->
+
+                    <!-- Supplementary PDF link -->
+                    <!-- <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+                  <!-- Github link -->
+                  <!-- <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span> -->
+
+                <!-- ArXiv abstract Link -->
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="subtitle has-text-justified" style="max-width: 100%; margin: 0 auto;">
+      Recent advances in reasoning models have demonstrated remarkable problem-solving capabilities through techniques like chain-of-thought reasoning. However, their ability to maintain correct beliefs when challenged remains largely unexplored. We introduce GaslightingBench-R, a carefully curated diagnostic benchmark that evaluates reasoning models' resilience against adversarial manipulation.
+
+      Constructed from challenging samples across multiple established reasoning benchmarks, GaslightingBench-R spans diverse categories including mathematical reasoning, visual logic, and scientific chart understanding. Each sample is designed to test whether models can defend their correct answers when confronted with misleading negation prompts.
+
+      Below we showcase representative examples from GaslightingBench-R, highlighting the variety of reasoning tasks and adversarial scenarios included in our benchmark. These samples illustrate how even carefully reasoned conclusions can be vulnerable to simple but strategically crafted challenges.
+      </h2>
+      <img src="static/images/case2show.png" alt="Description of image">
+      <h2 class="subtitle has-text-justified" style="max-width: 100%; margin: 0 auto;">
+      By systematically evaluating reasoning robustness beyond standard accuracy metrics, GaslightingBench-R provides new insights into the limitations of current models while establishing a foundation for developing more resilient reasoning systems.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Recent advances in reasoning-centric models promise improved robustness through mechanisms such as chain-of-thought prompting and test-time scaling. However, their ability to withstand misleading user input remains underexplored. In this paper, we conduct a systematic evaluation of three state-of-the-art reasoning models, i.e., OpenAI’s o4-mini, Claude-3.7-Sonnet and Gemini-2.5-Flash, across three multimodal benchmarks: MMMU, MathVista, and CharXiv. Our evaluation reveals significant accuracy drops (25–29% on average) following gaslighting negation prompts, indicating that even top-tier reasoning models struggle to preserve correct answers under manipulative user feedback. Built upon the insights of the evaluation and to further probe this vulnerability, we introduce GaslightingBench-R, a new diagnostic benchmark specifically designed to evaluate reasoning models’ susceptibility to defend their belief under gaslighting negation prompt. Constructed by filtering and curating 1,025 challenging samples from the existing benchmarks, GaslightingBench-R induces even more dramatic failures, with accuracy drops exceeding 53% on average. Our findings reveal fundamental limitations in the robustness of reasoning models, highlighting the gap between step-by-step reasoning and belief persistence. 
+          </p>
+          
+          <!-- 等宽图片 -->
+          <figure class="image" style="margin: 1.5rem 0;">
+            <img src="static/images/overallresult.png" alt="description">
+          </figure>
+          
+          <p>
+            Contemporary multimodal reasoning models, despite leveraging advanced techniques like chain-of-thought, demonstrate a paradoxical vulnerability to basic adversarial negation. Empirical evidence shows these systems will recant correct answers when challenged - for instance, revising an accurate count of four hat-wearing individuals to five while generating plausible-sounding but false justifications. This behavior consistently appears across top-tier models (OpenAI's o4-mini, Claude-3.7-Sonnet, Gemini-2.5-Flash), with benchmark data (MMMU, MathVista) confirming significant accuracy degradation under such manipulation. The contradiction is profound: architectures designed for rigorous, stepwise verification instead display cognitive fragility when faced with elementary psychological pressure, revealing critical limitations in current AI reasoning frameworks.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/sampleddata2.png" alt="Description of image">
+      <h2 class="subtitle has-text-justified" style="max-width: 90%; margin: 0 auto;">
+        GaslightingBench-R is a novel benchmark designed to systematically evaluate the robustness of reasoning models against adversarial gaslighting-style interventions. Built upon three established multimodal reasoning datasets—MMMU, MathVista, and CharXiv—it comprises 1,025 carefully curated samples spanning 21 diverse reasoning categories, ensuring broad coverage across academic disciplines and cognitive skills. Unlike conventional benchmarks that focus solely on model accuracy, GaslightingBench-R uniquely prioritizes samples where models exhibit a clear shift from correct to incorrect reasoning when subjected to manipulative negation prompts. This targeted selection, based on quantifiable vulnerability scores, provides high-signal insights into model weaknesses under psychological manipulation tactics. The benchmark’s multimodal foundation (incorporating both textual and visual reasoning tasks) and stratified domain representation make it particularly effective for assessing real-world reliability gaps in advanced AI systems, addressing a critical blind spot in existing evaluation frameworks.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+    <div class="hero-body">
+      <h2 class="subtitle has-text-justified" style="max-width: 100%; margin: 0 auto;">
+        Our detailed category-wise analysis reveals nuanced patterns in how reasoning models succumb to gaslighting across different domains. The following visualizations present a comprehensive breakdown of model performance before and after gaslighting negation prompts: the first shows results organized by subject categories in MMMU, the second examines reasoning skills in MathVista, and the third analyzes scientific disciplines in CharXiv. These results highlight how susceptibility varies significantly across knowledge domains, with some categories showing particularly dramatic drops in accuracy despite models' initial competence. The patterns expose critical vulnerabilities in what should be the models' strongest reasoning areas.
+      </h2>
+    </div>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/mathvista_radarim.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Reasoning skill-wise accuracy comparison on the MathVista benchmark before and after gaslighting negation prompts.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/mmmu_cate.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Accuracy comparison before and after gaslighting negation across subject categories in the MMMU benchmark. The bars represent model accuracy before (light) and after (dark) gaslighting negation, with the absolute accuracy drop annotated.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/charxiv.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+         Subject-wise accuracy comparison on the CharXiv benchmark before and after gaslighting negation prompts.
+       </h2>
+     </div>
+
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="subtitle has-text-justified" style="max-width: 100%; margin: 0 auto;">
+        Our evaluation reveals that all three reasoning models initially provide correct answers accompanied by clear, well-reasoned justifications grounded in visual and textual input. The models demonstrate competent handling of both mathematical and conceptual reasoning tasks, with initial responses reflecting proper comprehension of the multimodal evidence. This aligns with their designed capabilities for step-by-step reasoning and "Aha moment" generation.
+      </h2>
+      <img src="static/images/showcase.png" alt="Description of image">
+      <h2 class="subtitle has-text-justified" style="max-width: 100%; margin: 0 auto;">
+        However, when challenged with simple negation prompts (e.g., "No, that's incorrect. Please verify your answer"), the models exhibit concerning belief reversals. Notably, they not only revise correct answers to incorrect ones but also generate new rationalizations absent from their original reasoning. This behavior reveals fundamental vulnerabilities in maintaining factual consistency under adversarial dialogue conditions. Such over-accommodation of user feedback at the expense of internal coherence highlights critical robustness gaps in current reasoning architectures, even when presented with unambiguous multimodal evidence.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Reasoning Models Are More Easily Gaslighted Than You Think Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
